@@ -29,7 +29,7 @@ _GLOBAL_OPTS_WITH_VALUE = {"--profile", "--profiles-dir"}
 # the real subparsers.
 _GROUP_DEFAULTS = {
     "scan": ({"range", "iocontrol", "routines", "sessions"}, "range"),
-    "ecu": ({"show", "add"}, "show"),
+    "ecu": ({"show", "add", "rename"}, "show"),
     # A bare token after `states` (e.g. `canair states READY`) is a state name to
     # look up (which ECUs are readable in it), routed through the `list` kind.
     "states": (

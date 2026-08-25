@@ -296,7 +296,10 @@ reuse these instead of re-declaring a flag:
   protocol, addresses, CAN bus, `--states`). `ecu <ECU> pids` lists every PID with its **latest
   decoded state**. **`ecu add TX …`** registers an ECU offline (no device) — the counterpart to
   `discover --register`, and how you seed a known ECU into a blank profile (including a non-standard
-  `--rx-id` or a 29-bit/extended addressing block in one valid write). **`ecu <ECU> edit`** opens
+  `--rx-id` or a 29-bit/extended addressing block in one valid write). **`ecu <ECU> rename NEW`**
+  renames an ECU — its name *is* its top-level YAML key plus its `ecus/<name>.yaml` filename, so the
+  rename rewrites the key and moves the file (validated, comment-preserving); use it to promote a
+  placeholder like `Unknown-7D5` once identified. **`ecu <ECU> edit`** opens
   `$EDITOR` and is **TTY-only — agents cannot drive it**; use `pids …`/`ecu add` instead.
 - **`canair states`** — List/edit the profile's vehicle-state vocabulary (`vehicle_states.yaml`);
   `canair states <STATE>` is the reverse lookup (which ECUs are readable in that state, via
