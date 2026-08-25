@@ -15,6 +15,31 @@ deliberately no "Unreleased" section — the open release pull request is the
 unreleased view, and it is always current.
 -->
 
+## [1.20.0](https://github.com/philipkocanda/canair/compare/v1.19.0...v1.20.0) (2026-08-25)
+
+
+### Added
+
+* **cli:** point a relocated top-level command to its real home ([ce4724b](https://github.com/philipkocanda/canair/commit/ce4724b6640768064c0df14451ef8235c868f4a0))
+* **ecu:** add rename subcommand for renaming a registered ECU ([b6d4c1f](https://github.com/philipkocanda/canair/commit/b6d4c1fa762f242b985054d0e4e0b1d31a6951c4))
+* **transport:** persist verified response frame counts to the profile ([83478f8](https://github.com/philipkocanda/canair/commit/83478f8bb6da2edbc534896972eceeb107e7a91e))
+
+
+### Fixed
+
+* **transport:** keep a response frame count through a transient drop ([d9ededf](https://github.com/philipkocanda/canair/commit/d9ededfe04043708626ac522779217566ac43ecc))
+
+
+### Documentation
+
+* can buses ([ea15d5c](https://github.com/philipkocanda/canair/commit/ea15d5cd0af4f354ebcc384a18c48fe420547a36))
+* ioniq-2017 AVN research ([861ab36](https://github.com/philipkocanda/canair/commit/861ab3657ffff264f326536f2b46d6631f7509b7))
+* ioniq-2017 profile ([a2d571b](https://github.com/philipkocanda/canair/commit/a2d571b662b93ab78b14f536af9df66c74d5b02e))
+* ioniq-2017 profile ([7478170](https://github.com/philipkocanda/canair/commit/74781704591d341506e6a04dbc84135d5c27bdb4))
+* ioniq-2017 profile ([78cd447](https://github.com/philipkocanda/canair/commit/78cd447d9a91591995a0e9a8c83d375a291b649e))
+* **ioniq-2017:** add known ECU CAN buses ([7d8a977](https://github.com/philipkocanda/canair/commit/7d8a9776d27e9c34c5f0890c1ad4496408b4342f))
+* **ioniq-2017:** regenerate bundled-profiles index for TPMS ECU ([2a67117](https://github.com/philipkocanda/canair/commit/2a67117cb932291f0cad78aa7aa637ef1d5dbd8b))
+
 ## [1.19.0](https://github.com/philipkocanda/canair/compare/v1.18.1...v1.19.0) (2026-08-10)
 
 
